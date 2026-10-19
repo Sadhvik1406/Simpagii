@@ -1,0 +1,6 @@
+{
+  "name": "Simp AGI",
+  "description": "Autonomous Android AGI agent powered by server-side multi-key Gemini pooling, cognitive episodic memory, reinforcement learning, and vision-guided Android device automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

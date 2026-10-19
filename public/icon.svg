@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="orb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Background with squircle safe-zone padding -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Outer Neural Ring -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#38bdf8" stroke-width="6" stroke-dasharray="16 12" opacity="0.4"/>
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#a855f7" stroke-width="4" stroke-opacity="0.5"/>
+
+  <!-- Astra Core Sphere with Glow -->
+  <circle cx="256" cy="256" r="96" fill="url(#orb)" filter="url(#glow)"/>
+  
+  <!-- Android Claw Geometric Accents -->
+  <path d="M190 200 L160 160 M322 200 L352 160" stroke="#38bdf8" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="216" cy="240" r="14" fill="#ffffff"/>
+  <circle cx="296" cy="240" r="14" fill="#ffffff"/>
+  <path d="M220 286 Q256 314 292 286" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Circuit nodes -->
+  <circle cx="160" cy="160" r="8" fill="#38bdf8"/>
+  <circle cx="352" cy="160" r="8" fill="#c084fc"/>
+  <circle cx="256" cy="116" r="6" fill="#38bdf8"/>
+</svg>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simp AGI - Autonomous Server-Side Android Companion</title>
+    <meta name="description" content="Simp AGI: Zero-overhead autonomous Android AGI agent powered by server-side multi-key Gemini pooling, cognitive episodic memory, reinforcement learning, and device automation." />
+    <meta property="og:title" content="Simp AGI - Autonomous Server-Side Android Companion" />
+    <meta property="og:description" content="Simp AGI: Zero-overhead autonomous Android AGI agent powered by server-side multi-key Gemini pooling, cognitive episodic memory, reinforcement learning, and device automation." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#090d16" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Simp AGI" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+      // Gracefully ignore harmless Vite HMR WebSocket closure in AI Studio preview iframe
+      window.addEventListener('unhandledrejection', function(e) {
+        if (e && e.reason && typeof e.reason.message === 'string' && (e.reason.message.includes('WebSocket') || e.reason.message.includes('ws'))) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
